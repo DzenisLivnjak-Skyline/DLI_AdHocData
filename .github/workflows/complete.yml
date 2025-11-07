@@ -34,7 +34,9 @@ jobs:
     uses: SkylineCommunications/_ReusableWorkflows/.github/workflows/DataMiner App Packages Master Workflow.yml@main
     with:
       configuration: Release
-      skipSonarCloud: true
+      sonarCloudProjectName: ${{ vars.SONAR_NAME }}
+      # solutionFilterName: "MySolutionFilter.slnf"
     secrets:
       dataminerToken: ${{ secrets.DATAMINER_TOKEN }}
-
+      sonarCloudToken: ${{ secrets.SONAR_TOKEN }}
+      # overrideCatalogDownloadToken: ${{ secrets.OVERRIDE_DATAMINER_TOKEN }}
