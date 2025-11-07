@@ -28,6 +28,8 @@ permissions:
   statuses: write
   security-events: write
   id-token: write
+  workflows: write
+
 
 jobs:
   CI:
