@@ -11,7 +11,7 @@ on:
       - "[0-9]+.[0-9]+.[0-9]+-**"
   workflow_dispatch:
 
-# 👇 Add this permissions block
+# 👇 FULL PERMISSIONS (updated with models: read)
 permissions:
   actions: write
   attestations: write
@@ -20,6 +20,7 @@ permissions:
   deployments: write
   discussions: write
   issues: write
+  models: read
   packages: write
   pages: write
   pull-requests: write
